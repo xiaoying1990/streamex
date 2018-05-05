@@ -31,7 +31,7 @@ import static one.util.streamex.StreamExInternals.*;
  * @param <T> the type of the stream elements
  * @param <S> the type of of the stream extending {@code AbstractStreamEx}
  */
-public abstract class AbstractStreamEx<T, S extends AbstractStreamEx<T, S>> extends
+public abstract  class AbstractStreamEx<T, S extends AbstractStreamEx<T, S>> extends
         BaseStreamEx<T, Stream<T>, Spliterator<T>, S> implements Stream<T>, Iterable<T> {
     @SuppressWarnings("unchecked")
     AbstractStreamEx(Stream<? extends T> stream, StreamContext context) {
